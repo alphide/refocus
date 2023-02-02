@@ -10,7 +10,7 @@ export class ExtractTextService {
   constructor(private http: HttpClient) { }
 
   extractText(url: string): Promise<string> {
-    return fetch(`https://cors-anywhere.herokuapp.com/${url}`)
+    return fetch(`https://corsanywhere.herokuapp.com/${url}`)
       .then(response => response.text());
   }
 }

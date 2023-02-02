@@ -1,14 +1,35 @@
+<section class="hero">
+  <div class="container text-left">
+    <div class="row">
+      <div class="col-md-8">
+        <a class="hero-brand" href="index.html" title="Home"
+          ><img class="avatar" alt="logo" src="assets/simplenologo.png"
+        /></a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+
+      <p class="tagline">
+        Another way to focus when reading
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+
 <form (ngSubmit)="extractText()">
   <div>
-    <label for="url">Enter the article URL:</label>
+    <label for="url">Enter article URL: </label>
     <input type="text" id="url" [(ngModel)]="articleUrl" name="url">
   </div>
   <button type="submit">Get Article Text</button>
 </form>
 
 <div *ngIf="articleText">
-  <h2>Article Text:</h2>
+    <h2>Article Text:</h2>
 
-  <script></script>
-  <p>{{ articleText }}</p>
+    <script></script>
+    <p>{{ articleText }}</p>
 </div>
