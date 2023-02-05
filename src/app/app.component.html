@@ -1,35 +1,92 @@
 <section class="hero">
-  <div class="container text-left">
+  <div class="no-padding">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-12">
         <a class="hero-brand" href="index.html" title="Home"
           ><img class="avatar" alt="logo" src="assets/simplenologo.png"
         /></a>
+        
       </div>
-    </div>
+    </div >
+    
 
-    <div class="col-md-4">
-
-      <p class="tagline">
-        Another way to focus when reading
-      </p>
-      
-    </div>
   </div>
+
 </section>
 
+<div class = "home">
 
-<form (ngSubmit)="extractText()">
-  <div>
-    <label for="url">Enter article URL: </label>
-    <input type="text" id="url" [(ngModel)]="articleUrl" name="url">
+<div class ="row">
+  <style>
+    p span {
+        display: block;
+    }
+  </style>
+
+  
+  <p class="tagline">
+    <span>Another way</span> 
+        
+  </p>
+  
+  <p class ="specialword">
+    <span>to focus</span> 
+  </p>
+  <p class = "tagline2">
+  when reading.
+</p>
+
+
+
+
+
+<div class="col-md-10"
+>
+
+
+  <div id = "desc2">
+  <p class="desc">
+    
+    Reading and annotating is important. Refocus elevates that, while simultaneously
+    helping others who have trouble focusing when reading.
+  </p>
+</div>  
+</div>
+</div>
+
+
+
+<div class = "center">
+  
+<a class="btn btn-full" href="#started">Get Started</a>
+</div>
+</div>
+
+<!-- ------------Content---------------- -->
+
+<div id="started">
+  <div class="container3 text-center">
+   
+ 
+    <form (ngSubmit)="extractText()">
+      
+      <div>
+        <label for="url">Enter article URL: </label>
+        <input type="text" id="url" [(ngModel)]="articleUrl" name="url">
+      </div>
+      <button type="submit">Get Article Text</button>
+    </form>
+    
+    <div *ngIf="articleText">
+      <h2 class = "heres">Here's What We Found:</h2>
+        
+
+      
+        <div class = "results" [innerHTML]="articleText"></div>
+        <script></script>
+      
+    </div>
+   
+
   </div>
-  <button type="submit">Get Article Text</button>
-</form>
-
-<div *ngIf="articleText">
-    <h2>Article Text:</h2>
-
-    <script></script>
-    <p>{{ articleText }}</p>
 </div>
