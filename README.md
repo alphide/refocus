@@ -1,8 +1,8 @@
-# ResumeApp
+# Refocus
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
 
-This is not a good pattern to follow as page should have its own route. All files changed are under src/app and src/assets. Many of the CSS are not correct since this was built with Angular v7 and bootstrap v4. Will need to fix the css for things to look right but this should only be used as an example.
+Refocus is a website that aims to help the user focus on the article they're reading. Later implementations of saved annotations and retyping to be added.
 
 ## Development server
 
